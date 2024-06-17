@@ -1,0 +1,428 @@
+div.main {
+  display: grid;
+
+  grid-template-columns: auto;
+  /* grid-template-rows: 5.625rem 14.9375rem 5.5rem auto; */
+  grid-template-rows: auto auto auto auto;
+
+  gap: 0.5rem;
+
+  & .section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--gray-100);
+    /* border: blue solid; */
+  }
+
+  & section#perfil {
+    font-size: var(--fs-title-sm);
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+
+    & img {
+      width: 3.5rem;
+      height: 3.5rem;
+
+      border-radius: 0.625rem;
+    }
+
+    & div.information {
+      display: flex;
+      flex-direction: column;
+      padding-left: 1rem;
+      gap: 0.25rem;
+    }
+  }
+
+  & section#loyalty-card {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 1.25rem;
+    /* gap: 1.25rem; */
+
+    & header.header-loyalty {
+      /* max-width: 19.4375rem; */
+      width: 100%;
+
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      /* gap: 1rem; */
+      padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+
+      & .loyalty-card {
+        max-width: 10.75rem;
+        display: flex;
+        flex-direction: column;
+
+        gap: 0.25rem;
+      }
+
+      & h2#id {
+        max-width: 7.6875rem;
+        background-color: var(--bg-color);
+        border-radius: 62.4375rem;
+        padding: 0.5rem;
+        text-wrap: nowrap;
+      }
+    }
+
+    & div.box-checked {
+      display: grid;
+
+      grid-template-columns: repeat(5fr);
+      grid-template-rows: 1fr 1fr;
+      gap: 0.5rem;
+      padding-bottom: 1.25rem;
+
+      /* padding: 1.25rem 1.1875rem 1.25rem 1.25rem; */
+
+      & .checked {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 3.5rem;
+        height: 3.5rem;
+
+        background-color: var(--bg-color);
+      }
+
+      & .checked-gift {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 3.5rem;
+        height: 3.5rem;
+
+        background-color: var(--bg-color);
+      }
+
+      & .checked img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      & .checked-gift img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    .checked:nth-child(1) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .checked:nth-child(2) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .checked:nth-child(3) {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+    .checked:nth-child(4) {
+      grid-column: 4/5;
+      grid-row: 1/2;
+    }
+    .checked:nth-child(5) {
+      grid-column: 5/6;
+      grid-row: 1/2;
+    }
+
+    .checked-gift:nth-child(5) {
+      grid-column: 5/6;
+      grid-row: 2/3;
+    }
+  }
+
+  & section#remaining-cuts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+
+    padding: 1rem 1.25rem;
+
+    & .box-cut {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      & .write-information {
+        display: flex;
+        align-items: last baseline;
+        /* justify-content: center; */
+        gap: 0.25rem;
+
+        & span {
+          font-size: var(--fs-text-sm);
+        }
+      }
+
+      & .constructor {
+        display: flex;
+        align-items: center;
+        /* justify-items: center; */
+        gap: 0.75rem;
+
+        & .progress-bar {
+          width: 11.375rem;
+          height: 0.5rem;
+          border-radius: 624.9375rem;
+
+          /* background-color: greenyellow; */
+          background-color: var(--gray-300);
+          /* background: var(--main-gradient); */
+        }
+      }
+    }
+
+    & .gift-full {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 3.5rem;
+      height: 3.5rem;
+
+      border-radius: 48.5625rem;
+
+      background-color: var(--bg-color);
+
+      & img {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+    }
+  }
+
+  & section#historic {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    border-radius: 1rem;
+    padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+
+    & .box-historic {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    & .box-dates {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 0.75rem;
+
+      & li {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        & .h-dates {
+          & h2 {
+            color: var(--text-color-secondary);
+          }
+        }
+
+        & .bg-img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+
+          background-color: var(--gray-200);
+        }
+      }
+    }
+  }
+}
+
+@media (width >= 90em) {
+  section .section:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  section .section:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  section .section:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  section .section:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  div.main {
+    /* grid-template-columns: 20rem auto;
+    grid-template-rows: 5.625rem 14.9375rem 5.5rem auto; */
+    /* border: brown solid; */
+    max-width: 912vw;
+    max-height: 466vh;
+    grid-template-columns: auto auto;
+    grid-template-rows: 5.625rem 14.9375rem 5.5rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    & section#loyalty-card {
+      /* max-height: 20.8125rem; */
+      padding: 2.25rem 2rem 2rem 2rem;
+
+      border-radius: 1.25rem;
+
+      & header.header-loyalty {
+        max-width: 31.5rem;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        border-radius: 1.25rem;
+
+        /* margin: 0; */
+        padding: 0;
+        padding-bottom: 2rem;
+
+        & .loyalty-card {
+          max-width: 19.125rem;
+        }
+
+        & h2#id {
+          max-width: 24.1875rem;
+          padding: 0.5rem 0.75rem;
+        }
+      }
+
+      & div.box-checked {
+        gap: 1rem;
+        /* padding-bottom: 2rem; */
+        padding: 0;
+
+        & .checked {
+          width: 5.5rem;
+          height: 5.5rem;
+        }
+
+        & .checked-gift {
+          width: 5.5rem;
+          height: 5.5rem;
+        }
+
+        & .checked img {
+          width: 4rem;
+          height: 4rem;
+        }
+
+        & .checked-gift img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+    }
+
+    & section#remaining-cuts {
+      padding: 2rem;
+
+      & .box-cut {
+        gap: 0.75rem;
+
+        & .write-information {
+          gap: 0.35rem;
+
+          & span {
+            font-size: var(--fs-text-md);
+          }
+        }
+
+        & .constructor {
+          & .progress-bar {
+            width: 21.9375rem;
+
+            /* background-color: greenyellow; */
+            background-color: var(--gray-300);
+            /* background: var(--main-gradient); */
+          }
+        }
+      }
+
+      & .gift-full {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 4.5rem;
+        height: 4.5rem;
+
+        border-radius: 62, 4375rem;
+
+        & img {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
+
+    & section#historic {
+      padding: 1.75rem 1.75rem 1.5rem 1.5rem;
+
+      & .box-dates {
+        /* max-height: 22.5rem; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: scroll;
+
+        & > li:nth-child(1) {
+          margin-top: 1rem;
+        }
+
+        & li {
+          width: 100%;
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
+          gap: 0.75rem;
+
+          & .h-dates {
+            & h2 {
+              color: var(--text-color-secondary);
+            }
+          }
+
+          & .bg-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+
+            background-color: var(--gray-200);
+          }
+        }
+      }
+    }
+  }
+}

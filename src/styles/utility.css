@@ -1,0 +1,32 @@
+.py-base {
+  padding-top: var(--py-base);
+}
+
+.py-md {
+  padding-top: var(--py-md);
+}
+
+.py-lg {
+  padding-top: var(--py-lg);
+}
+
+.py-xl {
+  padding-top: var(--py-xl);
+}
+
+.px-lg {
+  padding-inline: var(--px-lg);
+}
+
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  margin-inline: auto;
+  /* border: solid violet; */
+}
+
+@media (width >= 90em) {
+  .container {
+    --max-width: 80rem;
+  }
+}

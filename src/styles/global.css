@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --pink: #d658b3;
+  --green: #45b442;
+
+  --gray-700: #332b31;
+  --gray-600: #4a4448;
+  --gray-500: #756c71;
+  --gray-400: #d3cfd2;
+  --gray-300: #dfdcdf;
+  --gray-200: #e9e7e9;
+  --gray-100: #f4f1f2;
+  --white: #ffffff;
+
+  --main-gradient: linear-gradient(
+    90deg,
+     #2DAA6E 0%,
+     #2DAAAA 33.33%,
+     #856CCF 66.67%,
+     #D658B3 100%
+  );
+
+  --bg-color: var(--gray-200);
+
+  --text-color-primary: var(--gray-500);
+  --text-color-secondary: var(--gray-600);
+
+  --ff-sans: "Oxygen", system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-bold: 800;
+
+  /* Desktop */
+  --fs-title-md: 1.5rem; /*h1*/
+  --fs-subtitle-md: 0.875rem; /*h2*/
+  --fs-text-md: 1rem; /*span*/
+
+  /* Mobile */
+  --fs-title-sm: 1.125rem; /*h1*/
+  --fs-subtitle-sm: 0.75rem; /*h2*/
+  --fs-text-sm: 0.875rem; /*span*/
+
+  /* Mobile e horas do histórico desktop*/
+  --fs-text-xs: 0.75rem; /*span*/
+
+  /* Mobile First*/
+  --fs-title-base: var(--fs-title-sm);
+  --fs-subtitle-base: var(--fs-subtitle-sm);
+  --fs-text-base: var(--fs-text-sm);
+
+  --py-base: 1rem; /* 16px */
+  --py-md: 1.25rem; /* 20px */
+  --py-lg: 1.5rem; /* 24px */
+  --py-xl: 2rem; /* 32px */
+
+  --px-lg: 0.75rem;
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-text-md);
+  line-height: 1.4;
+  color: var(--text-color-primary);
+
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  line-height: 1.4;
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  color: var(--text-color-secondary);
+  font-size: var(--fs-title-base);
+}
+
+h2 {
+  color: var(--text-color-primary);
+  font-size: var(--fs-subtitle-base);
+  text-transform: uppercase;
+}
+
+span {
+  font-size: var(--fs-text-xs);
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+@media (width >= 90em) {
+  :root {
+    --fs-title-base: var(--fs-title-md);
+    --fs-subtitle-base: var(--fs-subtitle-md);
+    --fs-text-base: var(--fs-text-md);
+
+    --py-base: 2rem; /* 32px */
+    --py-md: 4rem; /* 64px */
+    --py-lg: 2.25rem; /* 36px */
+    --py-xl: 4rem; /* 64px */
+
+    --px-lg: 16.5rem;
+  }
+}
