@@ -8,4 +8,4 @@ import "./styles/form.css";
 import "./styles/section.css";
 
 // JS
-import "./modules/form/submit.js";
+import "./modules/form/perfilLoad.js";
