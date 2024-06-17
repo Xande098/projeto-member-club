@@ -4,6 +4,7 @@
       "id": "124-537-835-230",
       "name": "Natália Miranda",
       "clientSince": "18/09/2023",
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "appointmentHistory": [
         { "date": "29/04/2024", "time": "18:30" },
         { "date": "16/03/2024", "time": "17:00" },
@@ -22,6 +23,7 @@
       "id": "207-245-699-104",
       "name": "Capitão Nascimento",
       "clientSince": "12/04/2023",
+      "image": "https://images.unsplash.com/photo-1593168186820-16181fc96990?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "appointmentHistory": [
         { "date": "01/05/2024", "time": "10:00" },
         { "date": "12/02/2024", "time": "09:00" },
@@ -38,6 +40,7 @@
       "id": "523-114-876-908",
       "name": "Sansão",
       "clientSince": "15/07/2023",
+      "image": "https://images.unsplash.com/photo-1717066777744-91ea6efcbe27?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "appointmentHistory": [
         { "date": "22/04/2024", "time": "16:00" },
         { "date": "18/03/2024", "time": "16:30" },
