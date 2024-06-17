@@ -6,3 +6,6 @@ import "./styles/utility.css";
 import "./styles/header.css";
 import "./styles/form.css";
 import "./styles/section.css";
+
+// JS
+import "./modules/form/submit.js";
