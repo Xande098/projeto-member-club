@@ -17,6 +17,17 @@ form.onsubmit = async (event) => {
       return alert("Informe o ID do cartão!");
     }
 
+    const value = id;
+
+    const regex = /^\d{3}\W\d{3}\W\d{3}\W\d{3}$/;
+
+    const isValid = regex.test(value);
+    console.log(isValid);
+
+    if (!isValid) {
+      return alert("Formato de ID inválido!");
+    }
+
     const information = await perfilFetchByCard(id);
 
     informationShow(information);
