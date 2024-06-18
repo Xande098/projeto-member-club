@@ -280,8 +280,10 @@ div.main {
     /* border: brown solid; */
     max-width: 912vw;
     max-height: 466vh;
-    grid-template-columns: auto auto;
+    /* grid-template-columns: 20rem 35.5rem; */
+    grid-template-columns: 20rem auto;
     grid-template-rows: 5.625rem 14.9375rem 5.5rem;
+    justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
 
