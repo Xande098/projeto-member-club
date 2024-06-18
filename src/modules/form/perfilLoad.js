@@ -3,6 +3,7 @@ import { informationShow } from "../sections/informationShow.js";
 import { loyaltyCardShow } from "../sections/loyaltyCardShow.js";
 import { remainingCutsShow } from "../sections/remainingCutsShow.js";
 import { historicShow } from "../sections/historicShow.js";
+import { modalShow } from "../sections/modalShow.js";
 
 const form = document.querySelector("form");
 const cardId = document.getElementById("card-id");
@@ -34,6 +35,7 @@ form.onsubmit = async (event) => {
     loyaltyCardShow(information);
     remainingCutsShow(information);
     historicShow(information);
+    modalShow(information);
   } catch (error) {
     alert("Não foi possível buscar os dados para esse ID!");
     console.log(error);

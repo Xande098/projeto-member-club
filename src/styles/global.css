@@ -87,7 +87,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+button {
   line-height: 1.4;
   font-weight: var(--fw-bold);
 }
@@ -97,7 +98,8 @@ h1 {
   font-size: var(--fs-title-base);
 }
 
-h2 {
+h2,
+button {
   color: var(--text-color-primary);
   font-size: var(--fs-subtitle-base);
   text-transform: uppercase;
