@@ -21,9 +21,9 @@ div.form {
       /* color: red; */
     }
 
-    & input {
+    /* & input {
       color: red;
-    }
+    } */
     /* & input:not(:value-shown) {
       color: green;
     } */

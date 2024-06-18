@@ -1,7 +1,5 @@
 const h2 = document.querySelector("#loyalty-card header #id");
-// const div = document.querySelectorAll("#loyalty-card .box-checked .checked");
 const boxChecked = document.querySelector("#loyalty-card .box-checked");
-// const items = document.querySelectorAll("#loyalty-card .box-checked .checked");
 
 export function loyaltyCardShow(information) {
   h2.innerHTML = "";
